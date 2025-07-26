@@ -46,7 +46,7 @@ Edit
 
 ---
 
-## 🛠️ Code Structure
+##  Code Structure
 
 Medibot/
 ├── temperature_sensor/ # Temp simulation or MLX90614 setup
@@ -62,7 +62,7 @@ Edit
 
 ---
 
-## 💡 Inspiration and Vision
+## Inspiration and Vision
 
 This project was inspired by the **need for affordable, DIY health solutions**. As part of my independent robotics and research work, I'm developing Medibot to blend **electrical engineering**, **embedded systems**, and **healthcare** innovation. It also represents my passion for **real-world problem solving through hands-on technology**.
 
