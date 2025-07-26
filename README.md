@@ -10,7 +10,18 @@ Arduino-powered health assistant robot for monitoring vital signs like temperatu
 
 Medibot was built to support the **healthcare community**, particularly in areas with a shortage of medical staff or devices. With just a few components, Medibot can provide automated, hygienic, and affordable health screening, making early diagnosis and regular checkups more accessible.
 
----
+---Medibot/
+├── temperature_sensor/ # Temp simulation or MLX90614 setup
+├── pulse_sensor/ # Pulse simulation or MAX30102 setup
+├── blood_pressure_sensor/ # BP logic using MPX5700
+├── display_output/ # Serial Monitor or LCD output
+├── main_code/ # Combined logic (for testing + final)
+└── README.md # Project overview and purpose
+
+yaml
+Copy
+Edit
+
 
 ##  Features
 
@@ -75,10 +86,79 @@ I’m a high school student from Saskatchewan with a strong interest in **Electr
 
 ##  Contributions & Mentorship
 
-If you're a professor, researcher, or engineer interested in collaborating, mentoring, or advising, feel free to reach out via GitHub or [your email/contact].
+If you're a professor, researcher, or engineer interested in collaborating, mentoring, or advising, feel free to reach out via GitHub. 
 
----
 
-## 📎 License
+
+Basic Temp sensor code
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  float tempC = random(365, 380)/ 10; 
+   Serial.print("Body Temp: ");
+   Serial.print(tempC);
+   Serial.print(" C");
+   delay(2000);
+ 
+}
+
+Basic pulse rate code
+void setup() {
+ Serial.begin(9600); 
+}
+void loop() {
+  int heartrate = random(65, 105);
+
+  Serial.print("Heartrate: ");
+  Serial.print(heartrate);
+  Serial.print(" bpm");
+  delay(2000);
+}
+Basic blood Pressure Sensor code
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int systolic = random(100, 140);
+  int diastolic = random(65, 90);
+   Serial.print("blood pressure: ");
+   Serial.print(systolic);
+   Serial.print("/");
+   Serial.print(diastolic);
+   Serial.print(" mmHg");
+   delay(3000);
+}
+
+void setup() {
+  Serial.begin(9600);
+}
+
+Main code (combining everything)
+void loop() {
+ 
+  float tempC = random(365, 380) / 10.0;
+  int heartRate = random(65, 105);
+  int systolic = random(100, 140);
+  int diastolic = random(65, 90);
+
+  Serial.println("------ Medibot Vital Check ------");
+  Serial.print("Temperature: "); Serial.print(tempC); Serial.println(" °C");
+  Serial.print("Pulse Rate: "); Serial.print(heartRate); Serial.println(" bpm");
+  Serial.print("Blood Pressure: ");
+  Serial.print(systolic); Serial.print("/");
+  Serial.print(diastolic); Serial.println(" mmHg");
+
+  Serial.println("---------------------------------");
+  delay(4000);
+}
+
+
+
+##  License
 
 This project is open-source for educational and prototyping purposes. Contributions welcome!
