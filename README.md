@@ -1,4 +1,4 @@
-# Medibot
+ # Medibot
 Arduino-powered health assistant robot for monitoring vital signs like temperature, pulse, and blood pressure.
  
 
@@ -91,7 +91,10 @@ If you're a professor, researcher, or engineer interested in collaborating, ment
 
 
 Basic Temp sensor code
-
+// 🔧 Medibot - Simulated Temperature Sensor
+// This is mock code using random() values to simulate readings from the MLX90614
+// Real sensor integration will replace this once hardware is available
+// Temperature range simulated: 36.0°C to 38.0°C
 void setup() {
   Serial.begin(9600);
 }
@@ -105,6 +108,11 @@ void loop() {
    delay(2000);
  
 }
+Basic pulse sensor
+// 🔧 Medibot - Simulated Pulse & Heart Rate Sensor
+// This mock code simulates MAX30102 readings using random values
+// Actual optical sensor data will replace this in the final version
+// Simulated pulse range: 65–100 bpm
 
 Basic pulse rate code
 void setup() {
@@ -118,11 +126,15 @@ void loop() {
   Serial.print(" bpm");
   delay(2000);
 }
-Basic blood Pressure Sensor code
+
+Basic Blood pressure code
+// 🔧 Medibot - Simulated Blood Pressure Monitor
+// This code simulates BP readings normally taken via MPX5700 + air cuff
+// Systolic range: 110–130 mmHg, Diastolic: 70–85 mmHg
+
 void setup() {
   Serial.begin(9600);
 }
-
 void loop() {
   int systolic = random(100, 140);
   int diastolic = random(65, 90);
@@ -133,12 +145,12 @@ void loop() {
    Serial.print(" mmHg");
    delay(3000);
 }
+Main code (combining everything)
 
 void setup() {
   Serial.begin(9600);
 }
 
-Main code (combining everything)
 void loop() {
  
   float tempC = random(365, 380) / 10.0;
