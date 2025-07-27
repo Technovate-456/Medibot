@@ -108,11 +108,12 @@ void loop() {
    delay(2000);
  
 }
-Basic pulse sensor
+
 // 🔧 Medibot - Simulated Pulse & Heart Rate Sensor
 // This mock code simulates MAX30102 readings using random values
-// Actual optical sensor data will replace this in the final version
 // Simulated pulse range: 65–100 bpm
+// Actual optical sensor data will replace this in the final ve
+}
 
 Basic pulse rate code
 void setup() {
@@ -127,8 +128,9 @@ void loop() {
   delay(2000);
 }
 
+  
 Basic Blood pressure code
-// 🔧 Medibot - Simulated Blood Pressure Monitor
+// 🔧 Medibot - Simulated Blood Pressure Monitoring
 // This code simulates BP readings normally taken via MPX5700 + air cuff
 // Systolic range: 110–130 mmHg, Diastolic: 70–85 mmHg
 
