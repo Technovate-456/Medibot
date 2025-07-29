@@ -1,0 +1,19 @@
+#define SENSOR_PIN A0
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int raw = analogRead(SENSOR_PIN);
+  float voltage = raw * (5.0 / 1023.0);
+
+  // Convert voltage to pressure (kPa) for MPX5700
+  float pressure_kPa = (voltage - 0.2) * (700.0 / 4.5); // adjust constants if needed
+
+  Serial.print("🩸 Pressure: ");
+  Serial.print(pressure_kPa);
+  Serial.println(" kPa");
+
+  delay(1000);
+}
