@@ -1,0 +1,19 @@
+#include <Wire.h>
+#include <Adafruit_MLX90614.h>
+
+ Adafruit_MLX90614 mlx = Adafruit_MLX90614();
+void setup() {
+  Serial.begin(9600);
+  mlx.begin();
+}
+
+void loop() {
+  Serial.print("Ambient temp ");
+  Serial.print(mlx.readAmbientTempC());
+  Serial.print(" C");
+  Serial.print("Object temp");
+  Serial.print(mlx.readObjectTempC());
+  Serial.print(" C");
+  delay(2000);// put your main code here, to run repeatedly:
+
+}
