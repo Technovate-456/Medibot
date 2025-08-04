@@ -12,7 +12,7 @@ void loop() {
   float tempC = mlx.readObjectTempC();
   float tempF = mlx.readObjectTempF();
 
-  Serial.print("🌡️ Temp: ");
+  Serial.print("Temp: ");
   Serial.print(tempC);
   Serial.println(" °C");
 
