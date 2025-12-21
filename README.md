@@ -52,7 +52,7 @@ blood_pressure_sensor/ # BP logic using MPX5700
 
 ## Inspiration and Vision
 
-This project was inspired by the "need for affordable, DIY health solutions". As part of my independent robotics and research work, I'm developing Medibot to blend **electrical engineering**, **embedded systems**, and **healthcare** innovation. It also represents my passion for**Addressing real-world challenges through the active application of technology.**.
+This project was inspired by the "need for affordable, DIY health solutions". As part of my independent robotics and research work, I'm developing Medibot to blend **electrical engineering**, **embedded systems**, and **healthcare** innovation. It also represents my passion for **Addressing real-world challenges through the active application of technology.**.
 
 
 ##  Current Status
