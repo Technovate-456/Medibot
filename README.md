@@ -1,8 +1,8 @@
  # Medibot
-Arduino-powered health assistant robot for monitoring vital signs like temperature, pulse, and blood pressure.
+Arduino/ESP32-powered health assistant robot for monitoring vital signs like temperature, pulse, and blood pressure.
  
 
-Medibot is a low-cost, Arduino-powered health assistant prototype designed to monitor vital signs, including body temperature, pulse rate, blood pressure, and oxygen saturation, using non-invasive sensors. This project aims to improve access to basic healthcare diagnostics, particularly in communities with limited access to medical services or equipment.
+Medibot is a low-cost, ESP32-powered health assistant prototype designed to monitor vital signs, including body temperature, pulse rate, blood pressure, and oxygen saturation, using non-invasive sensors. This project aims to improve access to basic healthcare diagnostics, particularly in communities with limited access to medical services or equipment.
 
 
 ##  Purpose
